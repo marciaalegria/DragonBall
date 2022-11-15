@@ -4,7 +4,7 @@ export default function Titulo
 () {
   return (
     <div>
-        <h2>imagen</h2>
+        <img src='image.png' alt=''></img>
         <h1>Prueba del Dragón</h1>
     </div>
   )

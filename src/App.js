@@ -11,15 +11,18 @@ import Llamada from './Llamada';
 function App() {
   return (
     <div className="App">
-      <>
-      <i class="bi bi-search"></i>
-      <i class="bi bi-funnel"></i>
-      <Llamada/>
-      <Busqueda/>
-      <FiltrosUniversos/>
+      <div className='Header'>
+      </div>
+      <Busqueda><i class="bi bi-search"></i></Busqueda>
+      <FiltrosUniversos><i class="bi bi-funnel"></i></FiltrosUniversos>
       <Titulo/>
-      <Cards/>
-      </>
+      <div className='body'>
+      <Llamada/>
+      <Cards
+        title='nombre'
+        universe='universo'
+        image='imagen'/>
+      </div>
     </div>
   );
 }

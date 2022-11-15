@@ -1,38 +1,55 @@
 .App {
   text-align: center;
+  position: absolute;
+  width: 1440px;
+  height: 1565px;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(180deg, rgba( 4, 7, 0) 0%, #A40910 20.46%, #000000 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
-.App-header {
-  background-color: #282c34;
+.Header {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url('../public/topp.png');
+  background-repeat: no-repeat;
+  background-position: center;
   justify-content: center;
+  opacity: 0.35;
   font-size: calc(10px + 2vmin);
-  color: white;
+}
+h1{
+  position: absolute;
+  width: 331px;
+  height: 44px;
+  left: 554px;
+  top: 336px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 44px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #FFFFFF;
+
+  text-shadow: 10px 10px 16px rgba(0, 0, 0, 0.25);
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
