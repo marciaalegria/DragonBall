@@ -1,28 +1,26 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
-import Busqueda from './components/Busqueda';
 import Cards from './components/Cards';
-import FiltrosUniversos from './components/FiltrosUniversos';
-import Titulo from './components/Titulo';
-import Llamada from './Llamada';
-
+import Header from './components/Header';
+import { obtenerPersonajes } from './helpers/getCharacters';
 
 function App() {
+  const [personaje, setPersonaje]=useState([]);
+  useEffect(()=>{
+    const getFetch= async ()=>{
+      const getPersonaje=  await obtenerPersonajes();
+      setPersonaje(getPersonaje)
+    }
+    getFetch();
+  },[])
+
   return (
     <div className="App">
-      <div className='Header'>
-      </div>
-      <Busqueda><i class="bi bi-search"></i></Busqueda>
-      <FiltrosUniversos><i class="bi bi-funnel"></i></FiltrosUniversos>
-      <Titulo/>
-      <div className='body'>
-      <Llamada/>
-      <Cards
-        title='nombre'
-        universe='universo'
-        image='imagen'/>
-      </div>
+        <Header/>
+        <Cards
+          personaje={personaje}
+        />
     </div>
   );
 }

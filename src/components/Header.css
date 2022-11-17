@@ -1,0 +1,14 @@
+.Header {
+    border: solid 5px;
+    border-color: aqua;
+    /* min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../public/topp.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    opacity: 0.35;
+    font-size: calc(10px + 2vmin); */
+  }
