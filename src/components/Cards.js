@@ -11,7 +11,7 @@ export default function Cards({personaje}) {
             <div className='card-title'>
               <h2>{item.name}</h2>
             </div>
-            <div className='card-universe'>4
+            <div className='card-universe'>
               <h3>Universo {item.universe}</h3>
             </div>
             <div className='card-image'>
