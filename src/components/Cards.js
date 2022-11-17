@@ -8,15 +8,15 @@ export default function Cards({personaje}) {
       {personaje.map((item,index)=>(
         <div key={index}>
           <div className='card-container'>
-            {/* <div className='card-title'>
+            <div className='card-title'>
               <h2>{item.name}</h2>
-            </div> */}
-            {/* <div className='card-universe'>
-              <h3>{item.universe}</h3>
-            </div> */}
-            {/* <div className='card-image'>
+            </div>
+            <div className='card-universe'>4
+              <h3>Universo {item.universe}</h3>
+            </div>
+            <div className='card-image'>
               <img src={item.imageUrl} alt='personaje'></img>
-            </div> */}
+            </div>
             {/* <button>
               <a href=''>Ver Ficha</a>
             </button>             */}

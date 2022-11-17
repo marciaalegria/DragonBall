@@ -6,17 +6,13 @@
     margin-left: 120px;
     margin-right: 100px;
     padding: 25px 50px;
-    border: solid 5px;
-    border-color: rgb(236, 223, 48);
 }
-
 .card-container{ 
     width: 206px;
     height: 221px;
     box-sizing: border-box;
-    position: relative;
-    display: flex;
-    justify-content: center;
+    display: block;
+    align-items: center;
     margin: 10% 20% 50% 5%;
     left: 0%;
     right: 0%;
@@ -28,37 +24,34 @@
     border-radius: 10px;
 }
 .card-container:hover{
-
 } 
-/*
  .card-title{
-    
-    width: 206px;
+    width: 200px;
     height: 36px;
     left: 0px;
     top: 10px;
-    font-family: 'Quicksand', sans-serif;
-    
+    line-height: 31px;
+    display: flex;
+    justify-content: center;
+} 
+.card-title h2{
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
     font-style: bold;
     font-weight: 900;
     font-size: 26px;
-    line-height: 31px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    
-    color: #FFFFFF;
-} 
+}
  .card-universe{
-    
-    width: 112px;
+    border: solid 5px;
+    border-color: rgb(18, 227, 91);
+    width: 206px;
     height: 36px;
     left: 47px;
     top: 36px;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
+    font-weight: normal;
+    font-size: 10px;
     line-height: 22px;
     display: flex;
     align-items: center;
@@ -76,4 +69,4 @@
 } 
 .card-btn:hover{
 
-}*/
+}
