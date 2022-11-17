@@ -1,15 +1,15 @@
 .cards-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
-    margin-left: 150px;
-    margin-right: 150px;
+    flex-wrap: wrap;
+    margin-left: 120px;
+    margin-right: 100px;
     padding: 25px 50px;
     border: solid 5px;
     border-color: rgb(236, 223, 48);
-    
 }
-/* 
+
 .card-container{ 
     width: 206px;
     height: 221px;
@@ -17,6 +17,7 @@
     position: relative;
     display: flex;
     justify-content: center;
+    margin: 10% 20% 50% 5%;
     left: 0%;
     right: 0%;
     top: 0%;
@@ -28,7 +29,8 @@
 }
 .card-container:hover{
 
-}
+} 
+/*
  .card-title{
     
     width: 206px;
@@ -68,4 +70,10 @@
     height: 100px;
     left: 0px;
     top: 0px; 
-}  */
+} 
+.card-btn{
+
+} 
+.card-btn:hover{
+
+}*/
