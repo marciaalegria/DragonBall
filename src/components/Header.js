@@ -6,10 +6,16 @@ import Titulo from './Titulo'
 
 export default function Header() {
   return (
-    <div className='Header'>
+    <>    
+      <div className='header'>
+      <div className='header-nav'>
         <Busqueda/>
-        <FiltrosUniversos/>
-        <Titulo/>
-    </div>
+        <FiltrosUniversos/> 
+      </div>
+      <Titulo/>        
+      </div>
+    </>
+
+
   )
 }

@@ -17,9 +17,9 @@ export default function Cards({personaje}) {
             <div className='card-image'>
               <img src={item.imageUrl} alt='personaje'></img>
             </div>
-            {/* <button>
+            <button className='card-btn'>
               <a href=''>Ver Ficha</a>
-            </button>             */}
+            </button>
           </div>
         </div>  
       ))}
