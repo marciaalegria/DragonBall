@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useContext} from 'react'
+import { DataContext } from '../context/DataContext'
 import './Card.css'
 
-export default function Cards({personaje}) {
+export default function Cards() {
+  const {personaje} = useContext(DataContext);
   return (
     <div className='cards-container'>
-      
       {personaje.map((item,index)=>(
         <div key={index}>
           <div className='card-container'>
