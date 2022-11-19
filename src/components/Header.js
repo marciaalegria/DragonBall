@@ -15,7 +15,7 @@ function Header() {
           universos={obtenerPersonajes().universos}/> 
       </div>
       <Titulo/>        
-      </div>
+      </div> 
     </>
 
 

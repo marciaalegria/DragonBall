@@ -2,7 +2,7 @@ import React, { useContext} from 'react'
 import { DataContext } from '../context/DataContext'
 import './Card.css'
 
-export default function Cards() {
+function Cards() {
   const {personaje} = useContext(DataContext);
   return (
     <div className='cards-container'>
@@ -25,6 +25,6 @@ export default function Cards() {
         </div>  
       ))}
       </div>
-      
   )
 }
+export {Cards};
