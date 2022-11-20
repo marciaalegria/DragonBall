@@ -4,9 +4,13 @@ import './Card.css'
 
 function Cards() {
   const {personaje} = useContext(DataContext);
+
+
+  
   function getFicha(namePersonaje) {
     return `/info?${namePersonaje}`
   }
+  
   return (
     <div className='cards-container'>
       {personaje.map((item,index)=>(

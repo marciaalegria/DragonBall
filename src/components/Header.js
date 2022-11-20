@@ -3,7 +3,6 @@ import './Header.css'
 import {Busqueda} from './Busqueda'
 import {FiltrosUniversos} from './FiltrosUniversos'
 import Titulo from './Titulo'
-import { obtenerPersonajes } from '../helpers/getCharacters'
 
 function Header() {
   return (

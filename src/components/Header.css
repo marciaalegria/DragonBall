@@ -3,14 +3,11 @@ body{
 }
 .header{
   height: 350px;
-  /* border: solid 5px;
-  border-color: aqua; */
   display: block;
   margin-left: 120px;
   margin-right: 100px;
   margin-bottom: 0px;
   padding: 2px 50px;
-  /* font-size: calc(10px + 2vmin);  */
   position: relative;
   justify-content: center;
 }

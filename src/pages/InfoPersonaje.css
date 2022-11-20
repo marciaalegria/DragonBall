@@ -1,0 +1,97 @@
+
+.info{
+    height: 100%;
+    width: 100%;
+    margin:1px;
+    padding: 10px;
+    display: block;
+    flex-direction: column;
+}
+.info-section{
+    display: flex;
+    justify-content: left;
+}
+.info-btn{
+    height: 150px;
+    width: 470px;
+    margin:10px;
+    align-items: baseline;
+}
+.info-image{
+    display: flex;
+    justify-content: center;
+}
+.info-personaje{
+    display: flex;
+    justify-content: flex-start;
+}
+.info-personaje-image{
+    width: 400px;
+    background-color: fuchsia;
+}
+.info-personaje-datos{
+    width: 600px;
+}
+.datos-universe{
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    background: #EEC32C;
+    border-radius: 25px;
+    width: 110px;
+    height: 35px;
+    color: #000000;
+}
+.datos-universe-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 8px 16px;
+    padding: 0px;
+    width: 355px;
+    height: 38px;
+    margin: 25px;
+}
+.details-title{
+    margin-top: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    background: #CE0014;
+    width: 142px;
+    height: 36px;
+    border-radius: 10px 0px 0px 10px;
+}
+.details-description{
+    margin-top: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    background: #1E1E1E;
+    width: 142px;
+    height: 36px;
+    border-radius: 0px 10px 10px 0px;
+}
+img{
+    width: 284.72px;
+height: 125px;
+left: 578px;
+top: 18px;
+}
+ 
+    
