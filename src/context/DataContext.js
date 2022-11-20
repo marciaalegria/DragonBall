@@ -4,18 +4,17 @@ import { obtenerPersonajes } from "../helpers/getCharacters";
 export const DataContext = createContext();
 
 export const DataProvider= ({children}) =>{
-  const [personaje, setPersonaje]=useState([]);
+  const [personajes, setPersonajes]=useState([]);
   useEffect(()=>{
     const getFetch= async ()=>{
-      const getPersonaje=  await obtenerPersonajes();
-      setPersonaje(getPersonaje)
+      const getPersonajes=  await obtenerPersonajes();
+      setPersonajes(getPersonajes)
     }
     getFetch();
   },[])
   return (
-    <DataContext.Provider value={{personaje, setPersonaje}}>
+    <DataContext.Provider value={{personajes, setPersonajes}}>
         {children}
     </DataContext.Provider>
   )
 }
-

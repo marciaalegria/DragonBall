@@ -13,8 +13,8 @@ const rellenarBusqueda=( DataBusqueda)=>{
 }
 
 function Busqueda() {
-  const {personaje}= useContext(DataContext);
-  personaje.map(rellenarBusqueda);
+  const {personajes}= useContext(DataContext);
+  personajes.map(rellenarBusqueda);
   return (
     <div className='header-nav-barra'>
     <div className='header-icon'><FontAwesomeIcon icon={faMagnifyingGlass}/></div>

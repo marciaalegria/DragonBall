@@ -12,6 +12,8 @@
     justify-content: left;
 }
 .info-btn{
+    display: inline-flex;
+    color: #FFFFFF;
     height: 150px;
     width: 470px;
     margin:10px;
@@ -32,9 +34,19 @@
 .info-personaje-datos{
     width: 600px;
 }
+.info-h1{
+    margin: 25px;
+    width: 136px;
+    height: 68px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 56px;
+    align-items: center;
+    color: #FFFFFF;
+}
 .datos-universe{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin: 25px;
     font-family: 'Inter';
     font-style: normal;
@@ -43,7 +55,7 @@
     align-items: center;
     background: #EEC32C;
     border-radius: 25px;
-    width: 110px;
+    width: 120px;
     height: 35px;
     color: #000000;
 }
@@ -68,7 +80,7 @@
     text-align: center;
     color: #FFFFFF;
     background: #CE0014;
-    width: 142px;
+    width: 120px;
     height: 36px;
     border-radius: 10px 0px 0px 10px;
 }
@@ -87,11 +99,15 @@
     height: 36px;
     border-radius: 0px 10px 10px 0px;
 }
-img{
+.img-info{
     width: 284.72px;
-height: 125px;
-left: 578px;
-top: 18px;
+    height: 125px;
+    left: 578px;
+    top: 18px;
 }
- 
+h3{
+    width: 100px;
+    display: flex;
+    justify-content: end;
+}
     
