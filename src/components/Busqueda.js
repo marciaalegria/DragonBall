@@ -1,12 +1,26 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons'
+import { DataContext } from '../context/DataContext'
+import Select from 'react-select'
 
-export default function Busqueda() {
+const optionsSearch = []
+const rellenarBusqueda=( DataBusqueda)=>{
+  let buscarNombre= optionsSearch.find(opt=> opt.value=== DataBusqueda.name);
+  if (buscarNombre=== undefined) {
+    optionsSearch.push({ value: DataBusqueda.name, label: DataBusqueda.name});
+  }
+}
+
+function Busqueda() {
+  const {personaje}= useContext(DataContext);
+  personaje.map(rellenarBusqueda);
   return (
     <div className='header-nav-barra'>
     <div className='header-icon'><FontAwesomeIcon icon={faMagnifyingGlass}/></div>
-    <h4>Buscar por nombre</h4>
+    <Select placeholder='Nombre' options={optionsSearch}/>
+    <button>Buscar por nombre</button>
     </div>
   )
 }
+export {Busqueda};

@@ -79,12 +79,10 @@
     object-fit: cover;
 }
 .card-btn{
-    visibility: hidden;
     width: 180px;
     height: 36px;
     display: flex;
     justify-content: center;
 } 
 .card-btn:hover{
-    
 }

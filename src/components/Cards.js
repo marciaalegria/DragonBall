@@ -4,6 +4,9 @@ import './Card.css'
 
 function Cards() {
   const {personaje} = useContext(DataContext);
+  function getFicha(namePersonaje) {
+    return `/info?${namePersonaje}`
+  }
   return (
     <div className='cards-container'>
       {personaje.map((item,index)=>(
@@ -19,7 +22,7 @@ function Cards() {
               <img src={item.imageUrl} alt='personaje'></img>
             </div>
             <button className='card-btn'>
-              <a href=''>Ver Ficha</a>
+              <a href={getFicha(item.name)}>Ver Ficha</a>
             </button>
           </div>
         </div>  
