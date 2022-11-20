@@ -1,10 +1,11 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { DataContext } from '../context/DataContext'
 import { Link } from 'react-router-dom'
 import './Card.css'
 
 function Cards() {
-  const {personajes} = useContext(DataContext);
+  const {personajes} = useContext(DataContext)
+  
   return (
     <div className='cards-container'>
       {personajes.map((item,index)=>(

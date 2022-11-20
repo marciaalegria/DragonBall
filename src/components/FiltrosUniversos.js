@@ -16,7 +16,8 @@ function getUniverse(universo){
 console.log(universo);
 }
 function FiltrosUniversos() {
-  const [universo, setUniverso]= useState([]);
+
+  const [universo, setUniverso]= useState(0);
   const {personajes}=useContext(DataContext);
   personajes.map(rellenarUniverso);
   
