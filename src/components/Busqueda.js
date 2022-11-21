@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons'
 import { DataContext } from '../context/DataContext'
+import './Header.css'
 import Select from 'react-select'
 
 const optionsSearch = []
@@ -19,7 +20,7 @@ function Busqueda() {
     <div className='header-nav-barra'>
     <div className='header-icon'><FontAwesomeIcon icon={faMagnifyingGlass}/></div>
     <Select placeholder='Nombre' options={optionsSearch}/>
-    <button>Buscar por nombre</button>
+    <p className='style-nav'>Buscar por nombre</p>
     </div>
   )
 }
