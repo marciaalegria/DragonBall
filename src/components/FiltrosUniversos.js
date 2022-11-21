@@ -22,7 +22,7 @@ function FiltrosUniversos() {
     <div className='header-nav-barra'>
      <div className='header-icon'><FontAwesomeIcon icon={faFilter}/></div>
       <Select placeholder='Universo' options={options}/>
-    <p className='style-nav'>Filtrar universos</p>
+      <p className='style-nav'>Filtrar universos</p>
     </div>
   )
 }

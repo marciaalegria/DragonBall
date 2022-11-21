@@ -13,13 +13,12 @@ function InfoPersonaje() {
   
   const {personajes}= useContext(DataContext);
   const location = useLocation()
-  console.log(location.search);
   const name= location.search.replace('?','');
   const getDatosPersonaje = (name)=>{
     return personajes.find( pers => pers.name === name);
   }
   const personaje = getDatosPersonaje(name);
-  console.log(personaje);
+  
   return (
     <div className='info'>
       <div className='info-section'>
