@@ -7,7 +7,7 @@ function Cards() {
   const {personajes} = useContext(DataContext)
   
   return (
-    <div className='cards-container'>
+    <div className='cards-container'> 
       {personajes.map((item,index)=>(
         <div key={index}>
           <div className='card-container'>
@@ -20,7 +20,7 @@ function Cards() {
             <div className='card-image'>
               <img src={item.imageUrl} alt='personaje'></img>
             </div>
-            <Link to={`/info?${item.name}`}><button className='card-btn'>Ver Ficha</button></Link>
+            <Link to={`/info?${item.name}`}><p className='card-btn'>Ver Ficha</p></Link>
           </div>
         </div>  
       ))}
