@@ -1,7 +1,6 @@
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import { InfoPersonaje } from '../pages/InfoPersonaje';
 import {Home} from '../pages/Home'
-import {App} from '../App';
 
 export const AppRouter= () => {
   return (
