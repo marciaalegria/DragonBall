@@ -29,7 +29,6 @@
 }
 .info-personaje-image{
     width: 400px;
-    background-color: fuchsia;
 }
 .info-personaje-datos{
     width: 600px;
@@ -105,9 +104,14 @@
     left: 578px;
     top: 18px;
 }
-h3{
+.volver-inicio{
+
     width: 100px;
     display: flex;
     justify-content: end;
+    color: #FFFFFF;
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
 }
     

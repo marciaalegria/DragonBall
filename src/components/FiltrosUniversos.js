@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faFilter} from '@fortawesome/free-solid-svg-icons'
 import { DataContext } from '../context/DataContext'
@@ -12,19 +12,16 @@ const rellenarUniverso= (dataUniverso)=>{
     options.push({ value: dataUniverso.universe, label: 'Universo '+dataUniverso.universe});
   }
 }
-function getUniverse(universo){
-console.log(universo);
-}
+
 function FiltrosUniversos() {
 
-  const [universo, setUniverso]= useState(0);
   const {personajes}=useContext(DataContext);
   personajes.map(rellenarUniverso);
   
   return (
     <div className='header-nav-barra'>
      <div className='header-icon'><FontAwesomeIcon icon={faFilter}/></div>
-      <Select placeholder='Universo' options={options} onChange={setUniverso }/>
+      <Select placeholder='Universo' options={options}/>
     <button>Filtrar universos</button>
     </div>
   )
